@@ -9,6 +9,7 @@ describe Takeaway do
 		end
 
 		# it 'can take orders from customers' do
+		# 	allow(theDiner).to receive(:order) {"Una de albondigas"}
 		# end
 
 	end

@@ -2,7 +2,7 @@ require 'menu'
 
 describe Menu do
 	let(:menu)  { Menu.new }
-	let(:tripe) { double :tripe} 
+	# let(:tripe) { double :tripe} 
 
 	it 'is empty when created' do
 		expect(menu.items_list).to eq []

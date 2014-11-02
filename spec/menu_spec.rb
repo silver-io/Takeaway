@@ -2,20 +2,17 @@ require 'menu'
 
 describe Menu do
 	let(:menu)  { Menu.new }
-	# let(:tripe) { double :tripe}
+
+  context 'initialize'
 
 	it 'is empty when created' do
-		expect(menu.items_list).to eq []
+		expect(menu.dishes).to eq []
 	end
 
-	context 'list of items' do
+	# it 'can add dishes to the menu' do
+	# 	expect(menu.dishes).to eq []
+	# 	menu.dishes(dish).to eq []
+	# end
 
-		it 'has a list of dishes with prices' do
-			# tripe = Dish.new
-			# Sweetbread
-			# Orejas
-	  end
-
-  end
 end
 

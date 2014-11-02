@@ -7,5 +7,12 @@ class Menu
     @dishes = []
   end
 
+  def add(dish)
+    dishes << dish
+  end
+
+  def select(dish_name)
+    dishes.select {|dish| dish.name == dish_name}.first
+  end
 end
 

@@ -3,16 +3,18 @@ require 'menu'
 describe Menu do
 	let(:menu)  { Menu.new }
 
-  context 'initialize'
+  it 'should show list of dishes and their prices' do
+    pizza = double :dish, name: "pizza", price: 6
+    pasta = double :dish, name: "pasta", price: 7
+    menu.add(pizza)
+    menu.add(pasta)
+    expect(menu.dishes).to eq [pizza, pasta]
+  end
 
-	it 'is empty when created' do
-		expect(menu.dishes).to eq []
-	end
-
-	# it 'can add dishes to the menu' do
-	# 	expect(menu.dishes).to eq []
-	# 	menu.dishes(dish).to eq []
-	# end
-
+  it 'should allow customers to select from the menu' do
+    pizza = double :dish, name: "pizza", price: 6
+    menu.add(pizza)
+    expect(menu.select("pizza")).to eq pizza
+  end
 end
 

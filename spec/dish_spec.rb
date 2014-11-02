@@ -7,4 +7,9 @@ require 'dish'
       expect(dish.name).to eq('Pizza')
     end
 
+    it 'should have a price' do
+      expect(dish.price).to eq(6)
+    end
+
+
   end

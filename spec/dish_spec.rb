@@ -10,6 +10,4 @@ require 'dish'
     it 'should have a price' do
       expect(dish.price).to eq(6)
     end
-
-
   end

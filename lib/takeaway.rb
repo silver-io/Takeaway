@@ -1,16 +1,19 @@
 class Takeaway
 
-	attr_reader :menu
-	attr_reader :order
+  attr_reader :menu
+  attr_reader :orders
 
-	def initialize
-		@menu = true
-		@order = []
-	end
+  def initialize
+    @menu = true
+    @orders = []
+  end
 
-	def has_menu?
-		@menu
-	end
+  def has_menu?
+    @menu
+  end
 
+  def add_order(order)
+    @orders << order
+  end
 
 end

@@ -10,6 +10,12 @@ class Order
     items.each{|item| list << item}
   end
 
+  def remove(*items)
+    items.each{|item| list.delete(item)}
+
+  end
+
+
 
 end
 

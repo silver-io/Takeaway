@@ -9,4 +9,12 @@ require 'order'
       expect(order.list).to eq([:pizza])
     end
 
+    it 'can remove a dish' do
+      order.update(:pasta)
+      expect(order.list).to eq([:pasta])
+      order.remove(:pasta)
+      expect(order.list).to eq([])
+    end
+
+
   end

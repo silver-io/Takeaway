@@ -3,7 +3,6 @@ require 'menu'
 describe Menu do
 	let(:menu)  { Menu.new }
 
-
   it 'should add dishes' do
     pizza = double :dish, name: "pizza", price: 6
     pasta = double :dish, name: "pasta", price: 7
@@ -13,6 +12,11 @@ describe Menu do
   end
 
   it 'should remove dishes' do
+    pizza = double :dish, name: "pizza", price: 6
+    pasta = double :dish, name: "pasta", price: 7
+    menu.delete(pizza)
+    menu.delete(pasta)
+    expect(menu.dishes).to eq []
   end
 
   it 'should allow customers to select from the menu' do

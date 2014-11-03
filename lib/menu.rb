@@ -14,5 +14,10 @@ class Menu
   def select(dish_name)
     dishes.select {|dish| dish.name == dish_name}.first
   end
+
+  def delete(dish)
+    dishes.each{|dish| list.delete(dish)}
+  end
+
 end
 

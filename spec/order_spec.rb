@@ -26,7 +26,7 @@ require 'order'
       pasta = double("pasta", price: 7)
       order.update(pizza, pasta)
       expect(order.total).to eq(13)
-
     end
+
 
   end

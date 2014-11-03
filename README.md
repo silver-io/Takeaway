@@ -1,4 +1,6 @@
 
+[![Code Climate](https://codeclimate.com/github/silver-io/Takeaway/badges/gpa.svg)](https://codeclimate.com/github/silver-io/Takeaway)
+
 Write a class Takeaway.
 Implement the following functionality:
 list of dishes with prices

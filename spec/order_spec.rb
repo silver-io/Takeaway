@@ -21,8 +21,12 @@ require 'order'
       expect(order.number_items).to eq(2)
     end
 
+    it 'can calculate the total' do
+      pizza = double("pizza", price: 6)
+      pasta = double("pasta", price: 7)
+      order.update(pizza, pasta)
+      expect(order.total).to eq(13)
 
-
-
+    end
 
   end

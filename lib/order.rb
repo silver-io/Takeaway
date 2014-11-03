@@ -15,7 +15,9 @@ class Order
 
   end
 
-
+  def number_items
+    list.count
+  end
 
 end
 

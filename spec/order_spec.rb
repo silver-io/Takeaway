@@ -5,10 +5,8 @@ require 'order'
 
     it 'can receive a dish' do
       expect(order.list).to eq([])
-      order.update_with(:pizza)
+      order.update(:pizza)
       expect(order.list).to eq([:pizza])
     end
-
-
 
   end

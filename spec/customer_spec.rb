@@ -7,6 +7,13 @@ describe Customer do
     expect(customer.name).to eq('Pepe')
   end
 
+  it 'has an address' do
+    customer.update_address('London')
+    expect(customer.address).to eq('London')
+
+  end
+
+
 
 
 end

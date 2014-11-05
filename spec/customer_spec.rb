@@ -17,8 +17,4 @@ describe Customer do
     expect(customer.phone_number).to eq(07756545543)
   end
 
-
-
-
-
 end

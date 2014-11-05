@@ -1,0 +1,5 @@
+require './lib/customer'
+require './lib/dish'
+require './lib/menu'
+require './lib/order'
+require './lib/takeaway'

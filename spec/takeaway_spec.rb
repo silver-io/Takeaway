@@ -1,17 +1,24 @@
 require 'takeaway'
 
-describe Takeaway do
+  describe Takeaway do
 
-		let(:the_diner) { Takeaway.new }
+  		let(:the_diner) { Takeaway.new }
+      let (:order)  {double :order, item_total: 3, time_ordered: Time.now.round }
 
-		it 'has a menu when initialized' do
-				expect(the_diner.has_menu?).to be true
-		end
+  context 'functionality' do
 
-    it 'can receive an order' do
-        order = double :order
-        the_diner.add_order(order)
-        expect(the_diner.orders).to eq([order])
-   end
+  		it 'has a menu when initialized' do
+  				expect(the_diner.has_menu?).to be true
+  		end
 
-	end
+      it 'has an empty orders container when created' do
+          expect(the_diner.orders).to eq []
+      end
+
+      it 'can add orders to the order container' do
+          the_diner.add_order(order)
+      expect(the_diner.orders).to eq [order]
+    end
+
+  end
+end

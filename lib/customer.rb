@@ -3,8 +3,9 @@ class Customer
   attr_accessor :address
   attr_accessor :phone_number
 
-  def initialize(name)
+  def initialize(name, phone_number)
     @name = name
+    @phone_number = phone_number
   end
 
   def update_address(address)

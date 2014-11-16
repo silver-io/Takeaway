@@ -18,7 +18,7 @@ require 'takeaway'
 
       it 'can add orders to the order container' do
           the_diner.add_order(order)
-      expect(the_diner.orders).to eq [order]
+          expect(the_diner.orders).to eq [order]
     end
 
   end

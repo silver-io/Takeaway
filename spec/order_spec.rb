@@ -1,4 +1,6 @@
 require 'order'
+# require 'dish'
+# require 'item'
 
   describe 'order' do
     let(:order) {Order.new}

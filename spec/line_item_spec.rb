@@ -11,7 +11,14 @@ describe LineItem do
         it 'can have a number of dishes' do
           item = LineItem.new(:pasta, 3)
           expect(item.quantity).to eq (3)
-  end
+        end
+
+        it 'can calculate total cost of dishes' do
+          pasta = double :dish, price: 4.5
+          item = LineItem.new(pasta, 3)
+          expect(item.total).to eq 13.5
+        end
+
 
   end
 

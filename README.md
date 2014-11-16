@@ -9,18 +9,18 @@ The main goal for this test was to adhere to the SOLID principles and separate a
 
 ### How to use
 
-  `git clone https://github.com/silver-io/Takeaway.git`
-  `cd Takeaway`
-  `bundle install`
-  `irb`
-  `require './lib/load.rb'`
+- `git clone https://github.com/silver-io/Takeaway.git`
+- `cd Takeaway`
+- `bundle install`
+- `irb`
+- `require './lib/load.rb'`
 
 ### How to test
 
-  `cd Takeaway`
-  `rspec`
+- `cd Takeaway`
+- `rspec`
 
 ### Technologies used
 
-  Ruby
-  RSpec
+- Ruby
+- RSpec
